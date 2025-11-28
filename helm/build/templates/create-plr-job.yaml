@@ -56,7 +56,7 @@ spec:
             timeouts:
               pipeline: 1h0m0s
             workspaces:
-              - name: workspace
+              - name: shared-data
                 volumeClaimTemplate:
                   metadata:
                     labels:
