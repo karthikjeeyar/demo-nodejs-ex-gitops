@@ -1,0 +1,22 @@
+
+app:
+  name: demo-nodejs-ex
+  namespace: demo-nodejs-ex-dev
+  cluster: your-cluster.example.com
+
+git:
+  branch: main
+  repo: https://github.com/karthikjeeyar/demo-nodejs-ex.git
+  org: karthikjeeyar
+  name: demo-nodejs-ex
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: quay.io
+  organization: karthik_jk
+  host: quay.io
+  name: demo-nodejs-ex
+  tag: latest
