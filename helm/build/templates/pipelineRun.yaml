@@ -13,6 +13,8 @@ metadata:
     tekton.dev/pipeline: {{ .Values.app.name }}
   annotations:
     argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook-weight: "10"
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   params:
     - name: APP_NAME
